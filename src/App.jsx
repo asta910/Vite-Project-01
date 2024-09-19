@@ -7,8 +7,13 @@ import './App.css';
 const App = () => {
     return (
             <div className="app-container">
-                <WeatherPage />
-                <ConverterPage className="convert" />
+                <div className='c1'>
+                    <WeatherPage />
+                </div>
+                <div className="c2">
+                    <ConverterPage className="convert" />
+                </div>
+                
             </div>
     );
 };

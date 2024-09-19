@@ -1,8 +1,12 @@
+body {
+    background: linear-gradient(to bottom, #1E3A8A, #000000); 
+    transition: background 1s ease-in-out;
+}
+
 .app-container {
     display: flex;
-    flex-direction: row;  
     justify-content: center; 
-    align-items: flex-start;  
+    align-items: stretch;  
     gap: 20px;  
     padding: 20px;
 }
@@ -14,8 +18,21 @@
     background-color: #f0f0f0;  
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  
     border-radius: 8px;  
+    transition: transform 0.3s ease, background 1s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center; 
 }
 
-.convert{
-    margin-top: 10rem;
+.app-container > *:hover {
+    transform: scale(1.05); 
+}
+
+.c1 {
+    background: linear-gradient(to bottom, #1E3A8A, #000000); 
+}
+
+.c2 {
+    background: linear-gradient(to bottom, #2f478c, #000000); 
 }

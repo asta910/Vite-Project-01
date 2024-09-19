@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './WeatherApp.css'; 
 
 import rainIcon from './images/rain.png';
@@ -13,15 +13,20 @@ import windIcon from './images/wind.png';
 const WeatherApp = () => {
   const apiKey = '0857bdfbf9822bcb5f4d0f481d5e160a';
   const apiUrl = "https://api.openweathermap.org/data/2.5/weather?&units=metric&q=";
+  const defaultCity = 'Pune'; 
 
   const [weatherData, setWeatherData] = useState({
-    city: "New York",
+    city: defaultCity,
     temp: "22ºc",
     humidity: "50%",
     windSpeed: "15 km/h",
-    weatherIcon: rainIcon // Default image
+    weatherIcon: rainIcon 
   });
   const [errorMessage, setErrorMessage] = useState("");
+
+  useEffect(() => {
+    checkWeather(defaultCity); 
+  }, []);
 
   const checkWeather = async (city) => {
     try {
@@ -57,15 +62,21 @@ const WeatherApp = () => {
       case "Mist":
         return mistIcon;
       default:
-        return rainIcon; // Default icon
+        return rainIcon; 
     }
+  };
+
+  const handleSearchClick = () => {
+    const inputValue = document.querySelector(".search input").value;
+    const city = inputValue ? inputValue : defaultCity;
+    checkWeather(city);
   };
 
   return (
     <div className="card">
       <div className="search">
         <input type="text" placeholder="enter city name" spellCheck="false" />
-        <button onClick={() => checkWeather(document.querySelector(".search input").value)}>
+        <button onClick={handleSearchClick}>
           <img src={searchIcon} alt="Search" />
         </button>
       </div>
