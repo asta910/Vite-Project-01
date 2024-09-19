@@ -7,7 +7,19 @@
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
+.int{
+    max-width: 50%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
 
+}
+.change{
+    cursor: pointer;
+}
 .converter-container h2 {
     text-align: center;
     margin-bottom: 20px;
