@@ -1,17 +1,17 @@
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
-  name: ingress-kubecloud
+  name: ingress-1
   annotations:
     nginx.ingress.kubernetes.io/rewrite-target: /
 spec:
   tls:
   - hosts:
-    - convertor.dev-tech.in
+    - sub-domain.domain.in
     secretName: tls-cert
   ingressClassName: nginx
   rules:
-  - host: convertor.dev-tech.in
+  - host: sub-domain.domain.in
     http:
       paths:
       - path: /
