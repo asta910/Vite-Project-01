@@ -5,7 +5,7 @@ metadata:
 spec:
   secretName: tls-cert
   dnsNames:
-  - convertor.dev-tech.in
+  - domain-name
   issuerRef:
     name: letsencrypt-ci
     kind: ClusterIssuer
