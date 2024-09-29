@@ -29,7 +29,7 @@
     text-align: center;
     margin-bottom: 20px;
     font-size: 1.5em;
-    color: #c49e9e; 
+    color: #e6e3df; 
 }
 
 .converter-container input,
@@ -41,7 +41,7 @@
     border: 1px solid #ccc;
     font-size: 1em;
     background-color: #1e2a40;
-    color: #d4b7b7; 
+    color: #e6e3df; 
 }
 
 .converter-container .result {
@@ -49,5 +49,5 @@
     margin-top: 20px;
     font-weight: bold;
     font-size: 1.5em;
-    color: #ceb4b4; 
+    color: #e6e3df; 
 }
