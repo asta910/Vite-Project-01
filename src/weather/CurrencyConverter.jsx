@@ -4,7 +4,7 @@ import './CurrencyConverter.css';
 const currencyApiKey = '10df86099a660cd73dd75467';
 
 const CurrencyConverter = () => {
-    const [amount, setAmount] = useState(1);
+    const [amount, setAmount] = useState(100);
     const [fromCurrency, setFromCurrency] = useState('USD');
     const [toCurrency, setToCurrency] = useState('INR');
     const [exchangeRate, setExchangeRate] = useState(null);

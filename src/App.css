@@ -1,7 +1,13 @@
 body {
-    background: linear-gradient(to bottom, #1E3A8A, #000000); 
+    background: linear-gradient(to bottom, #1E3A8A, #000000);
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-attachment: fixed; 
     transition: background 1s ease-in-out;
+    margin: 0; 
+    height: 100vh; 
 }
+
 
 .app-container {
     display: flex;
