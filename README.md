@@ -1,3 +1,6 @@
+
+![Untitled Diagram drawio (6)](https://github.com/user-attachments/assets/0d8be988-a63a-4d67-99fc-66c124c9dbf0)
+
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
@@ -20,5 +23,8 @@ cd istio-1.23.2
 export PATH=$PWD/bin:$PATH
 
 
-![Untitled Diagram drawio (6)](https://github.com/user-attachments/assets/0d8be988-a63a-4d67-99fc-66c124c9dbf0)
+# Clone repository on Azure Devops platform
+Establish a connection between ACR and Azure DevOps build CI pipelines .
 
+# For a VM using terraform
+refer to another repo from my profile named terrform clone it and by doing so create a VM ,download Azure pipelines on that VM establish a connection between VM and azure DevOPs platform.
