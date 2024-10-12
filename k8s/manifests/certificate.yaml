@@ -1,0 +1,11 @@
+apiVersion: cert-manager.io/v1
+kind: Certificate
+metadata:
+  name: cert
+spec:
+  secretName: tls-cert
+  dnsNames:
+  - convertor.dev-tech.in
+  issuerRef:
+    name: letsencrypt-ci
+    kind: ClusterIssuer
