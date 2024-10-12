@@ -20,7 +20,5 @@ cd istio-1.23.2
 export PATH=$PWD/bin:$PATH
 
 
-
-
-
+![Untitled Diagram drawio (6)](https://github.com/user-attachments/assets/0d8be988-a63a-4d67-99fc-66c124c9dbf0)
 
